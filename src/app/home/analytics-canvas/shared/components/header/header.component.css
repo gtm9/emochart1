@@ -1,0 +1,20 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+/* .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+} */
+  
+.website-title {
+    margin: 1%;
+}
+
+a {
+    cursor: pointer;
+    margin: 0.5%;
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+h2{
+    font-family: 'Dosis', sans-serif;
+}
+
+h3{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.mat-divider {
+    border-top-color: rgba(0, 0, 0, 0.12);
+}
+
+:host .mat-icon {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+:host .profile-card {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
+:host .profile-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}

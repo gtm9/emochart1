@@ -1,0 +1,75 @@
+.thumbnail {
+    max-width: 600px;
+    width: 270px;
+    margin: 10px;
+    cursor: pointer;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    transition: all .1s;
+    overflow: hidden;
+}
+
+.thumbnail:hover {
+    border: 1px solid black;
+    transform: scale(1.02);
+}
+  
+.profile-logo {
+    background-size: cover;
+}
+
+.bullet {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.bullet::before {
+    content: "•";
+}
+
+.thumbnail .footer {
+    padding-left: 20px;
+    padding-bottom: 5px;
+    /* opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1); */
+}
+
+/* .thumbnail:hover .footer {
+    opacity: 0;
+    transform: translateY(0);
+} */
+
+/* card.component.css (or .scss) */
+ 
+.overlay {
+    position: absolute;
+    bottom: 43%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for overlay */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-around;
+    color: #fff; /* Text color on overlay */
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+.info {
+    padding: 1%;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05); /* Scale up card on hover (adjust as needed) */
+}
+
+.thumbnail:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+

@@ -1,0 +1,175 @@
+{
+    "emotions": [
+        {
+            "emotion": "amused",
+            "color": "yellow",
+            "value": 95
+        },
+        {
+            "emotion": "surprised",
+            "color": "yellow",
+            "value": 54
+        },
+        {
+            "emotion": "curious",
+            "color": "yellow",
+            "value": 38
+        },
+        {
+            "emotion": "confused",
+            "color": "yellow",
+            "value": 32
+        },
+        {
+            "emotion": "interested",
+            "color": "yellow",
+            "value": 32
+        },
+        {
+            "emotion": "entertained",
+            "color": "yellow",
+            "value": 32
+        },
+        {
+            "emotion": "excited",
+            "color": "yellow",
+            "value": 31
+        },
+        {
+            "emotion": "intrigued",
+            "color": "yellow",
+            "value": 30
+        },
+        {
+            "emotion": "happy",
+            "color": "yellow",
+            "value": 24
+        },
+        {
+            "emotion": "delighted",
+            "color": "yellow",
+            "value": 23
+        },
+        {
+            "emotion": "satisfied",
+            "color": "yellow",
+            "value": 22
+        },
+        {
+            "emotion": "contentment",
+            "color": "yellow",
+            "value": 22
+        },
+        {
+            "emotion": "nostalgic",
+            "color": "yellow",
+            "value": 22
+        },
+        {
+            "emotion": "inspired",
+            "color": "yellow",
+            "value": 18
+        },
+        {
+            "emotion": "impressed",
+            "color": "yellow",
+            "value": 16
+        },
+        {
+            "emotion": "amazed",
+            "color": "yellow",
+            "value": 16
+        },
+        {
+            "emotion": "enjoyment",
+            "color": "yellow",
+            "value": 14
+        },
+        {
+            "emotion": "frustrated",
+            "color": "yellow",
+            "value": 13
+        },
+        {
+            "emotion": "disappointed",
+            "color": "yellow",
+            "value": 12
+        },
+        {
+            "emotion": "admiration",
+            "color": "yellow",
+            "value": 9
+        },
+        {
+            "emotion": "crazy",
+            "color": "yellow",
+            "value": 9
+        },
+        {
+            "emotion": "respect",
+            "color": "yellow",
+            "value": 8
+        },
+        {
+            "emotion": "nostalgia",
+            "color": "yellow",
+            "value": 8
+        },
+        {
+            "emotion": "angry",
+            "color": "yellow",
+            "value": 8
+        },
+        {
+            "emotion": "enthralled",
+            "color": "yellow",
+            "value": 8
+        },
+        {
+            "emotion": "appreciation",
+            "color": "yellow",
+            "value": 7
+        },
+        {
+            "emotion": "happiness",
+            "color": "yellow",
+            "value": 7
+        },
+        {
+            "emotion": "energetic",
+            "color": "yellow",
+            "value": 7
+        },
+        {
+            "emotion": "grateful",
+            "color": "yellow",
+            "value": 5
+        },
+        {
+            "emotion": "sad",
+            "color": "yellow",
+            "value": 5
+        },
+        {
+            "emotion": "disgusted",
+            "color": "yellow",
+            "value": 3
+        },
+        {
+            "emotion": "hopeless",
+            "color": "yellow",
+            "value": 3
+        },
+        {
+            "emotion": "annoyed",
+            "color": "yellow",
+            "value": 2
+        }
+    ],
+    "maxEmo": [
+        95
+    ],
+    "count": [
+        33
+    ]
+}

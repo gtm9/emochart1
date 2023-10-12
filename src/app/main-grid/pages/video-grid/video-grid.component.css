@@ -1,0 +1,16 @@
+.flex-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 20px 0 50px;
+  }
+
+.col {
+    flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .column {
+      flex: 1;
+    }
+}

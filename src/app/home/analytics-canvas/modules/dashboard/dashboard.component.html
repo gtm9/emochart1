@@ -1,0 +1,35 @@
+<div>
+    <app-widget-area [data]="bigChart"></app-widget-area>
+</div>
+
+<br>
+
+<mat-divider></mat-divider>
+
+<br>
+
+<div class="flex-grid">
+    <mat-card class="col">
+        <app-widget-card label="Users" total="10k" percentage="50" [data]="cards"></app-widget-card>
+    </mat-card>
+    <mat-card class="col">
+        <app-widget-card label="Users retention" total="12k" percentage="40"></app-widget-card>
+    </mat-card>
+    <mat-card class="col">
+        <app-widget-card label="User Engagement" total="8k" percentage="30"></app-widget-card>
+    </mat-card>
+    <mat-card class="col">
+        <app-widget-card label="Referrals" total="6k" percentage="20"></app-widget-card>
+    </mat-card>
+</div>
+
+<br>
+
+<mat-divider></mat-divider>
+
+<br>
+
+<div class="flex-grid-2">
+    <app-widget-table></app-widget-table>
+    <app-widget-pie></app-widget-pie>
+</div>
