@@ -60,7 +60,8 @@ import { BarRaceComponent } from './widget/bar-race/bar-race.component';
     AreaComponent,
     CardComponent,
     PieComponent,
-    TableComponent
+    TableComponent,
+    BarRaceComponent
   ]
 })
 export class SharedModule { }

@@ -4,7 +4,7 @@ import { ChartsService } from '../charts.service';
 import { ChartBaseComponent } from '../chart-base/chart-base.component';
 
 @Component({
-  selector: 'app-bar-chart',
+  selector: 'app-bar-chartx',
   templateUrl: './bar-chart.component.html',
   styleUrls: ['./bar-chart.component.css'],
 })
