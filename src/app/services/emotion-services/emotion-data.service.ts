@@ -6,6 +6,8 @@ export interface  Emotion {
     emotion: string;
     color: string;
     value: number;
+    count: number;
+    rating: number;
 }
 
 export interface EmotionData {

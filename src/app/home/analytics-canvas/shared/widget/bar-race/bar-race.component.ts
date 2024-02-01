@@ -9,20 +9,23 @@ import { EmotionData, EmotionDataService } from 'src/app/services/emotion-servic
   styleUrls: ['./bar-race.component.css']
 })
 export class BarRaceComponent {
+
+  emoCount!: number;
+
   chart!: Highcharts.Chart;
   chartOptions: Highcharts.Options = {
     chart: {
       type: 'bar'
     },
     title: {
-      text: 'Sample Bar Chart'
+      text: 'Emotions'
     },
     xAxis: {
-      categories: ['Category 1', 'Category 2', 'Category 3', 'Category 4']
+      categories: ['emo list']
     },
     yAxis: {
       title: {
-        text: 'Y-Axis Label'
+        text: 'emotion'
       }
     },
     series: [
@@ -33,7 +36,10 @@ export class BarRaceComponent {
       }
     ]
   };
+
   
+  
+  yAxisEmoData: { name: string; color: string; y: number; }[] = [];
   emotionData!: EmotionData;
   categoryData: Array<string> = [];
   yAxisChartData: { name: string; color: string; y: number; }[] = [];
@@ -115,14 +121,16 @@ export class BarRaceComponent {
     // getting the emotion data
     this.emotionDataService.getEmotionData().subscribe(res => {
       this.emotionData = res;
+      this.emotionData.emotions.sort((e1, e2) => e2.rating - e1.rating);
+      this.emoCount = this.emotionData.count[0];
       console.log('emotionData',this.emotionData);
+
       // constructing the category array
       this.constructChartData()
-      console.log(this.categoryData);
+      // console.log('category', this.categoryData);
 
-      this.updateChart();
+      this.updateChart(10);
       // console.log(this.chartOptions.series)
-
     });
 
     setTimeout(() => {
@@ -132,8 +140,14 @@ export class BarRaceComponent {
     }, 300)
   }
 
-  updateChart() {
-    console.log(this.yAxisChartData)
+  updateChart(yExtreme: number) {
+    console.log('yAxisChartData',this.yAxisChartData[9])
+
+    this.yAxisChartData.sort((e1, e2) => e2.y - e1.y);
+
+    // console.log('this.chartX',this.chart.xAxis[0].setExtremes);
+    // console.log('this.chartY',this.chart.yAxis);
+
     // Update the chart's series data with new data
     this.chart.update({
       xAxis: {
@@ -141,7 +155,7 @@ export class BarRaceComponent {
           title: {
               text: null
           },
-          gridLineWidth: 1,
+          gridLineWidth: 0,
           lineWidth: 0
       },
       series: [
@@ -154,13 +168,34 @@ export class BarRaceComponent {
     });
   }
 
+  showMore() {
+    console.log('showMore')
+    this.yAxisChartData.map(emo => {
+      this.yAxisEmoData.push(emo)
+    })
+    this.chart.update({
+      series: [
+        {
+          name: "Emotion",
+          type: "bar",
+          data: this.yAxisEmoData
+        }
+      ]
+    })
+  }
+
+  showLess() {
+    console.log('showLess')
+  }
+
   constructChartData() {
+    console.log('emotionData',this.emotionData);
     this.emotionData.emotions.map(emotion => {
       this.categoryData.push(emotion.emotion);
       this.yAxisChartData.push({
         name: emotion.emotion,
         color: emotion.color,
-        y: emotion.value,
+        y: emotion.rating,
       })
     })
   }

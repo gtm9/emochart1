@@ -32,6 +32,7 @@ import { AnalyticsCanvasComponent } from './home/analytics-canvas/analytics-canv
 import { DefaultModule } from './home/analytics-canvas/layouts/default/default.module';
 import { SharedModule } from './home/analytics-canvas/shared/shared.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,

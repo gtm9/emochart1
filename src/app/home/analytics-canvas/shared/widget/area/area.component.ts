@@ -8,6 +8,7 @@ import HC_exporting from 'highcharts/modules/exporting';
   styleUrls: ['./area.component.css']
 })
 export class AreaComponent implements OnInit {
+  
   chartOptions = {};
   
   Highcharts = Highcharts;
